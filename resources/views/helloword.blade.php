@@ -4,6 +4,11 @@
     $secondlink = 'http://127.0.0.1:8000/secondlink';
     $thirdlink = 'http://127.0.0.1:8000/thirdlink';
     $fourthlink = 'http://127.0.0.1:8000/fourthlink';
+
+    $arrlink = ['firstlink', 'secondlink', 'thirdlink', 'fourthlink'];
+
+
+
 @endphp
 
 <!DOCTYPE html>
@@ -97,6 +102,15 @@
                     <a href="{{$secondlink}}">Second Link</a>
                     <a href="{{$thirdlink}}">Third Link</a>
                     <a href="{{$fourthlink}}">Fourth Link</a>
+                </div>
+
+                <div>
+                    @foreach($arrlink as $link)
+                       <ul>
+                            <li><a href="{{ $link }}">ciao</a></li>
+                       </ul>
+                    @endforeach;
+
                 </div>
             </div>
         </div>
