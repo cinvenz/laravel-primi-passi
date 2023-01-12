@@ -1,5 +1,9 @@
 @php
-    $title = 'Hello Word'
+    $title = 'Hello Word';
+    $firstlink = 'http://127.0.0.1:8000/firstlink';
+    $secondlink = 'http://127.0.0.1:8000/secondlink';
+    $thirdlink = 'http://127.0.0.1:8000/thirdlink';
+    $fourthlink = 'http://127.0.0.1:8000/fourthlink';
 @endphp
 
 <!DOCTYPE html>
@@ -89,14 +93,10 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{$firstlink}}">First Link</a>
+                    <a href="{{$secondlink}}">Second Link</a>
+                    <a href="{{$thirdlink}}">Third Link</a>
+                    <a href="{{$fourthlink}}">Fourth Link</a>
                 </div>
             </div>
         </div>
