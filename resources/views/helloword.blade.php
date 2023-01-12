@@ -1,3 +1,7 @@
+@php
+    $title = 'Hello Word'
+@endphp
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -81,7 +85,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Boolean
+                    {{$title}}
                 </div>
 
                 <div class="links">
