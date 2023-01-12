@@ -7,8 +7,6 @@
 
     $arrlink = ['firstlink', 'secondlink', 'thirdlink', 'fourthlink'];
 
-
-
 @endphp
 
 <!DOCTYPE html>
@@ -74,6 +72,22 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .arrlink{
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+            }
+
+            .arrlink li {
+                list-style: none;
+            }
+
+            .arrlink a {
+                text-decoration: none;
+                color:red;
+                font-weight: bold
+            }
         </style>
     </head>
     <body>
@@ -104,13 +118,12 @@
                     <a href="{{$fourthlink}}">Fourth Link</a>
                 </div>
 
-                <div>
+                <div class="arrlink">
                     @foreach($arrlink as $link)
                        <ul>
-                            <li><a href="{{ $link }}">ciao</a></li>
+                            <li><a href="{{ $link }}">{{$link}}</a></li>
                        </ul>
                     @endforeach;
-
                 </div>
             </div>
         </div>
